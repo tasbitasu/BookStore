@@ -1,30 +1,74 @@
 # BookStore
-Laravel Simple Project
 I am Tasbiha Zaman student of PUB 23rd batch BSc in CSE, ID-35. 
+
 Today I’m showing my project titled “Laravel Bookstore Management System.”
-This is a web-based application developed using Laravel 12. The main purpose of this system is to manage books in a simple and organized way.
-🔹 How It Works:
-On the home page, it shows a list of all books in a table format.
-Each book displays important information like:
-Title
-Author
-ISBN number
-Stock quantity
-Price
-I used CRUD operations, which means:
-Create – I can add new books using a form.
-Read – I can view the list and details of each book.
-Update – I can edit and update book information.
-Delete – I can delete any book from the list.
-For each book, there are buttons: View, Edit, and Delete to perform these actions.
-I also added pagination, which means only 10 books are shown per page — making it easier to browse large lists.
-🔹 Technical Details:
-I used Laravel Controllers to handle the logic,
-Models to interact with the database,
-And Blade templates for the front-end design.
-The database is created with migrations, and I used MySQL to store the data.
-For styling, I used Bootstrap 5 to make it look clean and responsive.
-In short, this project helped me learn how to use Laravel's MVC structure to build a complete book management system.
+
+🌟 Features
+
+Book CRUD Operations (Create, Read, Update, Delete)
+
+Pagination (10 books per page)
+
+Responsive Design
+
+Modern UI (Bootstrap 5)
+
+🛠️ Technologies Used
+
+Backend: Laravel 12
+
+Frontend: Bootstrap 5
+
+Database: MySQL
+
+Pagination: Laravel Paginator
+
+🚀 Installation
+
+laragon install
+
+composer install
+
+project on folder www
+
+🚀 Run on Terminal
+
+cd book-store
+code .
+
+Edit .env file:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=bookstore
+DB_USERNAME=root
+DB_PASSWORD=
+
+create a database name bookstore
+
+php artisan migrate
+
+php artisan db:seed
+
+php artisan serve
+
+Access the application at http://127.0.0.1:8000
+
+📂 Project Structure
+
+book-store/
+├── app/               # Core application logic
+    └── Http/          # Controllers
+    ├── Models/        # Database models
+│   └── Providers/     # Paginator     
+├── database/          # Factories, Migrations and seeders
+├── resources/         # Views Create books and layout folder and it's file
+├── routes/            # Application routes
+
+📝 License
+This project is open-source and available under the MIT License.
+
 Thank You!
 
 🔹 Short Video Link: https://youtu.be/aYmCXCZK3uk?si=HnrvRljB5xZnzfY9
